@@ -1,0 +1,88 @@
+.container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 200px;
+    background-image: url('./pattern-bg.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    z-index: -1;
+    text-align: center;
+ 
+
+
+    
+    #input {
+            width: 35vw;
+            margin: 10px auto;
+            display: flex;
+
+        #btn {
+                border: none;
+                border-radius: 10px;
+                background-color: white;
+                font-size: 25px;
+                margin-left: 5px;
+            }
+    
+        input {
+                width: 90%;
+                height: 30px;
+                border-radius: 10px;
+                border: none;
+                font-weight: 600;
+                padding-left: 10px;
+    
+            }
+        }
+}
+
+.display{
+    width: 70vw;
+    height: 120px;
+    margin: 150px auto;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    padding: 7px;
+    .flex-2{
+        width: 25%;
+       height: auto;
+       text-align: center;
+
+    }
+}
+
+@media (max-width:650px){
+    .display{
+        height: 50vh;
+        width: 70vw;
+        flex-direction: column;
+        position: relative;
+        overflow: scroll;
+        margin: 100px auto;
+        
+     
+      
+       .flex-2{
+        width: 100%;
+        
+       }
+    }
+    .container{
+        h1{
+            width: 50vw;
+            font-size: 15px;
+        }
+        #input{
+            width: 70vw;
+        }
+    }
+          ::-webkit-scrollbar {
+              width: 0;
+              height: 0;
+          }
+}
+ 
